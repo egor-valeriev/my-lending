@@ -1,0 +1,94 @@
+.skills {
+    width: 100%;
+}
+
+.skills__container {
+    max-width: $main-block-width;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem auto;
+    padding: 0 5rem;
+}
+.skills__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center ;
+    width: 50%;
+    h2 {
+        padding: 5rem 0;
+    }
+}
+
+.skills__image {
+    width: 50%;
+    padding: 10rem;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .skills__container {
+        flex-direction: column-reverse;
+        align-items: center; 
+        
+        padding: 0;
+    }
+
+    .skills__content {
+        text-align: center;
+    }
+    .skills__image {
+        padding: 0;
+    }
+}
+
+
+.skills__list-item {
+    p {
+        font-size: 1.6rem;
+        color: $grey;
+        font-weight: 400;
+    }
+}
+
+.skills__item-value-container {
+    width: 100%;
+    height: 0.8rem;
+    background-color: lighten($grey, 20%);
+
+    margin: 2rem 0;
+}
+
+.skills__item-value {
+    width: 80%;
+    height: 0.8rem;
+    background-color: $secondary;
+
+    &.js {
+        width: 84%;
+    }
+    &.ts {
+        width: 67%;
+    }
+    &.css {
+        width: 87%;
+    }
+    &.flex{
+        width: 85%;
+    }
+    &.react {
+        width: 85%;
+    }
+    &.git {
+        width: 88%;
+    }
+    &.sass {
+        width: 89%;
+    }
+}

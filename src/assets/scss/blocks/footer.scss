@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    background-color: $secondary;
+}
+
+.footer__content {
+    max-width: $main-block-width;
+    margin: 0 auto;
+    padding: 5rem 5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__content-text {
+    color: $white;
+
+    h3 {
+        font-weight: 500;
+        font-size: $font-title-h3;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+}

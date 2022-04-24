@@ -1,0 +1,92 @@
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $primary;
+}
+
+.header__main-block {
+    max-width: $main-block-width;
+    width: 100%;
+    padding-top: 7rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    line-height: 4.8rem;
+}
+.nav__logo {
+    font-family: Revalia;
+    font-size: $font-title-h1;
+    color: $secondary;
+}
+.nav__list {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.nav__link {
+    text-transform: uppercase;
+    font-size: $font-p-medium;
+    font-family: Roboto;
+    text-decoration: none;
+    color: $black;
+    font-weight: 400;
+
+    transition: color 0.3s linear;
+
+    &:hover {
+        color: lighten($black, 50%);
+    }
+    &:active {
+        color: $secondary
+    }
+}
+
+.callme {
+    display: flex;
+    padding: 14rem 0;
+    justify-content: space-between;
+
+}
+.callme__image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 80%;
+        height: 80%;
+        background: none;
+        
+    }
+}
+.callme__content {
+    width: 50%;
+}
+.callme__content-title {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: $font-title-h1;
+    color: $black;
+    text-align: center;
+}
+.callme__content-text {
+    font-family: inherit;
+    font-weight: 400;
+    color: $grey;
+    font-size: $font-p-medium;
+    text-align: center;
+    width: 100%;
+
+    padding: 6rem 0;
+}
+
+.btn__callme {
+    margin: 0 auto;
+}

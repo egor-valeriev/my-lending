@@ -1,0 +1,41 @@
+.process {
+    width: 100%;
+    background-color: $primary;
+}
+
+.process__content {
+    max-width: $main-block-width;
+    width: 100%;
+    margin:  auto;
+    padding: 10rem 0;
+}
+
+.process__content-text {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+     
+    p {
+        padding: 5rem;
+        font-family: inherit;
+        font-size: $font-p-medium;
+        color: $grey;
+    }
+}
+.process__content-video {
+    width: 100%;
+    
+}
+
+.embed {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 5vw;
+    iframe {
+        
+        width: 100%;
+        min-height: 40vw;
+        max-height: 100%;
+        
+    }
+}
